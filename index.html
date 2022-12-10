@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo Web - App</title>
+  </head>
+  <body>
+    <main class="container">
+      <section id="welcome-section" class="welcome-section">
+        <p>
+          Welcome to your customizable TODO web app, please enter your NAME;
+        </p>
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Enter your name...."
+          autofocus
+          autocomplete="off"
+        />
+        <button id="enter-btn">Continue</button>
+      </section>
+
+      <div class="proper-page">
+        <section class="header-section">
+          <div class="welcome-text">
+            <p>
+              Hey <span id="name"></span>!!, welcome, what are your plans for
+              today?
+            </p>
+          </div>
+          <div class="img-div">
+            <img src="img/Background4.png" alt="bg-image" id="night" />
+            <img src="img/Background1.png" alt="bg2" id="day" />
+          </div>
+
+          <div class="date-time">
+            <p id="today-date"></p>
+            <p id="time">
+              <span id="hour"></span> : <span id="minutes"></span> :
+              <span id="seconds"></span>
+            </p>
+          </div>
+        </section>
+
+        <section class="todo">
+          <div class="todos">
+            <ul class="items">
+              <!-- <li class="item">
+                <input type="checkbox" id="checkbox" />
+                <p>Make Breakfast</p>
+              </li>
+              <li class="item green">
+                <input type="checkbox" id="checkbox" />
+                <p>Eat Breakfast</p>
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="enter-todos">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add todo(s)...."
+              autocomplete="off"
+            />
+            <button id="btn">+</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
