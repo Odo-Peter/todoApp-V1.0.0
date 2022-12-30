@@ -15,8 +15,6 @@ function startApp() {
     todoPage.style.display = 'flex';
     nameId.textContent = nameInput.value.toUpperCase();
 
-    document.querySelector('#todo-input').autofocus;
-
     //Add the day and time
     const today = new Date();
     const options = {
@@ -100,3 +98,7 @@ function startApp() {
 }
 
 startBtn.addEventListener('click', startApp);
+
+// window.addEventListener('keypress', (e) => {
+//   console.log(e.key == 'Enter');
+// });
