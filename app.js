@@ -98,7 +98,3 @@ function startApp() {
 }
 
 startBtn.addEventListener('click', startApp);
-
-// window.addEventListener('keypress', (e) => {
-//   console.log(e.key == 'Enter');
-// });
